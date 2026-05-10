@@ -1,5 +1,6 @@
 # Automatic Multi-Class Brain Tumor Segmentation System Using Edge Aware Res-UNet
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://edge-attention-resnet-unet.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -38,7 +39,7 @@ Brain tumor segmentation is a vital step in medical diagnostics. This project ai
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Automatic-Multi-Class-Brain-Tumor-Segmentation-System-Using-Edge-Aware-Res-UNet.git
+git clone https://github.com/shivanshu-1609/Automatic-Multi-Class-Brain-Tumor-Segmentation-System-Using-Edge-Aware-Res-UNet.git
 cd Automatic-Multi-Class-Brain-Tumor-Segmentation-System-Using-Edge-Aware-Res-UNet
 ```
 
@@ -53,7 +54,9 @@ This project utilizes the **BraTS (Brain Tumor Segmentation)** dataset. Please d
 
 ## 🖥️ Running the Application
 
-To run the Streamlit deployment application for real-time inference:
+**🌐 Live Demo:** You can try out the deployed application directly here: **[Ea+UNet Streamlit App](https://edge-attention-resnet-unet.streamlit.app/)**
+
+To run the Streamlit deployment application locally for real-time inference:
 
 ```bash
 cd "2. Ea+UNet/Streamlit_App"
