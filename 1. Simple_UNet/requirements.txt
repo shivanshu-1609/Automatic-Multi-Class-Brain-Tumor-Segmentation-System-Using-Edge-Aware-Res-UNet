@@ -1,0 +1,16 @@
+torch>=2.0.0
+torchvision
+numpy
+scipy
+pandas
+matplotlib
+tqdm
+nibabel
+opencv-python
+scikit-learn
+scikit-image
+albumentations
+hausdorff
+numba
+dictances
+-e ../Eval_Metrics/miseval-master

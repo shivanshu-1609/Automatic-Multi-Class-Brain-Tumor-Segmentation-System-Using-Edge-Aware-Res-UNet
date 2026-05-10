@@ -1,0 +1,9 @@
+Metric,Simple_UNet,Edge-Aware UNet
+Foreground Mean Dice Score (DSC),0.7355,0.7181
+Foreground Mean Sensitivity,0.7563,0.7935
+Foreground Mean Specificity,0.9988,0.9984
+Foreground Mean IoU,0.6455,0.6187
+Foreground Mean Hausdorff Distance (HD95),N/A,5.0615
+Dice Score - NCR/NET,0.6804,0.6642
+Dice Score - ED,0.7287,0.7157
+Dice Score - ET,0.7972,0.7743

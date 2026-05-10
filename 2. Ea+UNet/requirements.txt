@@ -1,0 +1,20 @@
+# Streamlit App Dependencies
+streamlit
+torch>=2.0.0
+torchvision
+numpy
+opencv-python
+Pillow
+matplotlib
+
+# Training & Evaluation Dependencies
+scipy
+pandas
+tqdm
+nibabel
+scikit-learn
+scikit-image
+albumentations
+hausdorff
+numba
+dictances
