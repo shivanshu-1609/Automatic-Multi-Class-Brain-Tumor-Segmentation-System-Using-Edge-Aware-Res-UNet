@@ -12,7 +12,14 @@ This repository contains the official implementation of the **Automatic Multi-Cl
 Brain tumor segmentation is a vital step in medical diagnostics. This project aims to accurately segment brain tumors from MRI scans into multiple sub-regions (e.g., necrosis, edema, enhancing tumor). We provide a comparative study and implementation of two architectures:
 
 1.  **Simple UNet (Baseline)**: A classic UNet architecture modified for robust performance on the BraTS dataset.
+    <br>
+    <img src="Comparison Result/simple_unet_architecture.png" alt="Simple UNet Architecture" width="600">
+
 2.  **Edge Aware Res-UNet (Ea+UNet)**: The proposed state-of-the-art model that integrates Residual blocks and an Edge Attention mechanism with boundary-based optimization to capture fine-grained details and fuzzy boundaries, significantly reducing false negatives.
+    <br>
+    <img src="Comparison Result/ea_unet_architecture.png" alt="Ea+UNet Architecture" width="500">
+    <br>
+    <img src="2. Ea+UNet/Phase2_EdgeVisualization/results/slice_060_comparison.png" alt="Edge Detection Visualization" width="600">
 
 ## 📂 Repository Structure
 
@@ -66,6 +73,14 @@ streamlit run app.py
 ## 📊 Results
 
 The Ea+UNet demonstrates clinical superiority over the baseline UNet, particularly in detecting fuzzy glioblastoma boundaries and reducing false negatives, ensuring higher diagnostic reliability. Detailed comparative analyses can be found in the `Comparison Result` folder.
+
+### Visual Comparison
+
+<img src="Comparison Result/model_comparison.png" alt="Model Comparison" width="800">
+
+### Training Performance
+
+<img src="Comparison Result/training_curves_comparison.png" alt="Training Curves Comparison" width="800">
 
 ## 🤝 Contributing
 
