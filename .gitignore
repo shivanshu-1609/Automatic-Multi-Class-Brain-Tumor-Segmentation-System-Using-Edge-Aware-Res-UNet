@@ -137,7 +137,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# Deep Learning weights and data
+# Deep Learning weights and generated data
 *.h5
 *.pth
 *.pt
@@ -147,12 +147,24 @@ cython_debug/
 *.tflite
 *.keras
 *.safetensors
-datasets/
-data/
-processed_brats_2d/
-all_155_slices_case_00006/
-outputs/
-inference_outputs/
+*.npy
+*.npz
+*.nii
+*.nii.gz
+/datasets/
+/data/
+/processed_brats_2d/
+/all_155_slices_case_00006/
+/outputs/
+/inference_outputs/
+**/outputs/
+**/inference_outputs/
+**/evaluation_metrics/GT/
+**/evaluation_metrics/pred/
+
+# Local report drafts; keep the final cited report tracked instead.
+BTP_1.pdf
+BTP_1 (1).pdf
 
 # OS generated files
 .DS_Store

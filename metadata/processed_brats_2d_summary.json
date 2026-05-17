@@ -1,0 +1,83 @@
+{
+  "candidate_slices_total": 31024,
+  "case_rows": 500,
+  "cases_by_split": {
+    "train": 450,
+    "val": 50
+  },
+  "data_policy": "Raw and processed .npy arrays are intentionally ignored by Git; this file records metadata only.",
+  "file_stats": {
+    "by_directory": {
+      "processed_brats_2d": {
+        "bytes": 1505939,
+        "count": 2
+      },
+      "processed_brats_2d/train/images": {
+        "bytes": 3566849792,
+        "count": 6046
+      },
+      "processed_brats_2d/train/masks": {
+        "bytes": 1783811840,
+        "count": 6046
+      },
+      "processed_brats_2d/val/images": {
+        "bytes": 410016640,
+        "count": 695
+      },
+      "processed_brats_2d/val/masks": {
+        "bytes": 205052800,
+        "count": 695
+      }
+    },
+    "by_extension": {
+      ".csv": {
+        "bytes": 1505939,
+        "count": 2
+      },
+      ".npy": {
+        "bytes": 5965731072,
+        "count": 13482
+      }
+    },
+    "bytes": 5967237011,
+    "exists": true,
+    "files": 13484
+  },
+  "generated_at_utc": "2026-05-17T17:34:38+00:00",
+  "manifest_rows": 6741,
+  "removed_redundant_total": 906,
+  "sample_image": {
+    "dtype": "float32",
+    "path": "processed_brats_2d/train/images/BraTS2021_00003_slice_081.npy",
+    "shape": [
+      4,
+      192,
+      192
+    ]
+  },
+  "sample_mask": {
+    "dtype": "int64",
+    "path": "processed_brats_2d/train/masks/BraTS2021_00003_slice_081.npy",
+    "shape": [
+      192,
+      192
+    ],
+    "unique_values": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "saved_slices_mean_per_case": 13.482,
+  "saved_slices_total": 6741,
+  "source_root": "processed_brats_2d",
+  "split_counts": {
+    "train": 6046,
+    "val": 695
+  },
+  "tumor_slice_counts": {
+    "0": 19,
+    "1": 6722
+  }
+}

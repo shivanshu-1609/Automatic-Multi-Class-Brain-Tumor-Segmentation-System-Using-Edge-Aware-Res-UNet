@@ -12,6 +12,7 @@ This folder is a clean copy of your `Modified_UNet` pipeline with:
    - `evaluation_metrics/GT`
    - `evaluation_metrics/pred`
    - `evaluation_metrics/evaluate_metrics.py` (imports `miseval` from `Eval_Metrics/miseval-master`)
+   - GT/pred `.npy` arrays are generated locally and ignored by Git; publish `metrics_results.csv` and repository metadata instead.
 
 ## Quick run order
 
@@ -22,16 +23,9 @@ python test_brats.py
 python evaluation_metrics/evaluate_metrics.py
 ```
 
-## One-command fast run (recommended on your system)
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\run_fast_pipeline.ps1
-```
-
-This script now uses conda env `brainseg` by default.
-
 Notes:
 - `test_brats.py` (default) writes matching `.npy` GT/pred files into `evaluation_metrics/GT` and `evaluation_metrics/pred`.
+- Generated `.npy`, checkpoint, and output folders are intentionally excluded from Git.
 - AISS defaults are already configured in `preprocess_brats_2d.py`.
 - Speed defaults are auto-tuned for your system class (24 GB NVIDIA GPU + high-core CPU):
   - auto batch size in train/test

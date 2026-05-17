@@ -15,24 +15,27 @@ For the best experience, deploy this repository to **Streamlit Cloud**. It nativ
 ### Local Run
 ```bash
 pip install -r requirements.txt
+cd Streamlit_App
 streamlit run app.py
 ```
 
 ---
 
 ## 🏗️ Project Structure
-- `app.py`: Main Streamlit application.
-- `best_model.pth`: Pre-trained model weights.
+- `Streamlit_App/app.py`: Main Streamlit application.
+- `Streamlit_App/best_model.pth`: Local pre-trained model weights. This checkpoint is intentionally ignored by Git.
 - `models/`: Architecture implementation (Shared).
-- `training/`: Full training pipeline, preprocessing scripts, and evaluation metrics.
-  - `training/train_brats.py`: Training entry point.
-  - `training/preprocess_brats_2d.py`: Data preparation.
+- `data/`: Dataset discovery, preprocessing helpers, augmentations, and ATISS slice selection.
+- `train_brats.py`: Training entry point.
+- `preprocess_brats_2d.py`: Data preparation.
 - `requirements.txt`: Combined dependencies for both app and training.
+
+Generated `.npy` data, GT/prediction arrays, checkpoints, and output folders are excluded from Git. Repository-safe summaries are stored in the root `metadata/` folder.
 
 ---
 
 ## 📈 Training Details
-For detailed instructions on how to train the model from scratch, please refer to the documentation in the `training/` directory.
+Use `preprocess_brats_2d.py`, `train_brats.py`, `test_brats.py`, and `evaluation_metrics/evaluate_metrics.py` to reproduce the training and evaluation pipeline.
 
 ## 🔗 Repository
 [https://github.com/shivanshu-1609/Edge-Attention-ResNet-UNet](https://github.com/shivanshu-1609/Edge-Attention-ResNet-UNet)

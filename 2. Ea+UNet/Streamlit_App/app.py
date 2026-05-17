@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 
 # Add current directory to path for imports
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(BASE_DIR)
+PROJECT_DIR = os.path.dirname(BASE_DIR)
+sys.path.append(PROJECT_DIR)
 
 from models import ResNetUNet
 

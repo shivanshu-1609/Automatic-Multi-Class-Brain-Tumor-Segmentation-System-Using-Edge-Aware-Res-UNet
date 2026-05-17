@@ -1,0 +1,100 @@
+{
+  "artifacts": [
+    {
+      "bytes": 110578176,
+      "case_count": 125,
+      "file_count": 1684,
+      "folder": "1. Simple_UNet/evaluation_metrics/GT",
+      "kind": "GT",
+      "max_slice_index": 137,
+      "min_slice_index": 13,
+      "model": "1. Simple_UNet",
+      "sample": {
+        "dtype": "uint8",
+        "path": "1. Simple_UNet/evaluation_metrics/GT/BraTS2021_00005_slice_120.npy",
+        "shape": [
+          256,
+          256
+        ],
+        "unique_values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "bytes": 110578176,
+      "case_count": 125,
+      "file_count": 1684,
+      "folder": "1. Simple_UNet/evaluation_metrics/pred",
+      "kind": "pred",
+      "max_slice_index": 137,
+      "min_slice_index": 13,
+      "model": "1. Simple_UNet",
+      "sample": {
+        "dtype": "uint8",
+        "path": "1. Simple_UNet/evaluation_metrics/pred/BraTS2021_00005_slice_120.npy",
+        "shape": [
+          256,
+          256
+        ],
+        "unique_values": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "bytes": 25709440,
+      "case_count": 50,
+      "file_count": 695,
+      "folder": "2. Ea+UNet/evaluation_metrics/GT",
+      "kind": "GT",
+      "max_slice_index": 137,
+      "min_slice_index": 23,
+      "model": "2. Ea+UNet",
+      "sample": {
+        "dtype": "uint8",
+        "path": "2. Ea+UNet/evaluation_metrics/GT/BraTS2021_00053_slice_061.npy",
+        "shape": [
+          192,
+          192
+        ],
+        "unique_values": [
+          0,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "bytes": 25709440,
+      "case_count": 50,
+      "file_count": 695,
+      "folder": "2. Ea+UNet/evaluation_metrics/pred",
+      "kind": "pred",
+      "max_slice_index": 137,
+      "min_slice_index": 23,
+      "model": "2. Ea+UNet",
+      "sample": {
+        "dtype": "uint8",
+        "path": "2. Ea+UNet/evaluation_metrics/pred/BraTS2021_00053_slice_061.npy",
+        "shape": [
+          192,
+          192
+        ],
+        "unique_values": [
+          0,
+          1,
+          3
+        ]
+      }
+    }
+  ],
+  "data_policy": "Evaluation GT/pred .npy arrays are excluded from Git; metrics CSV files remain tracked.",
+  "generated_at_utc": "2026-05-17T17:35:02+00:00"
+}

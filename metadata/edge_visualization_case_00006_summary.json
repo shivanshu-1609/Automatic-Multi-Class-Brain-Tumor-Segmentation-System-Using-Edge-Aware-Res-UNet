@@ -1,0 +1,50 @@
+{
+  "data_policy": "Full per-slice edge visualization images are local artifacts; this summary keeps counts and sizes only.",
+  "file_stats": {
+    "by_directory": {
+      "all_155_slices_case_00006/Canny edge detection": {
+        "bytes": 3327,
+        "count": 1
+      },
+      "all_155_slices_case_00006/Canny edge detection/GT_edges": {
+        "bytes": 162493,
+        "count": 136
+      },
+      "all_155_slices_case_00006/Canny edge detection/comparisons": {
+        "bytes": 10719037,
+        "count": 136
+      },
+      "all_155_slices_case_00006/Canny edge detection/masks_edges": {
+        "bytes": 91002,
+        "count": 136
+      },
+      "all_155_slices_case_00006/Model_Predicted_Edges": {
+        "bytes": 10207296,
+        "count": 68
+      },
+      "all_155_slices_case_00006/all_155_slices_case_00006_GT": {
+        "bytes": 1910405,
+        "count": 155
+      },
+      "all_155_slices_case_00006/all_155_slices_case_00006_masks": {
+        "bytes": 160700,
+        "count": 155
+      }
+    },
+    "by_extension": {
+      ".png": {
+        "bytes": 23250933,
+        "count": 786
+      },
+      ".py": {
+        "bytes": 3327,
+        "count": 1
+      }
+    },
+    "bytes": 23254260,
+    "exists": true,
+    "files": 787
+  },
+  "generated_at_utc": "2026-05-17T17:35:03+00:00",
+  "source_root": "all_155_slices_case_00006"
+}

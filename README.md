@@ -26,6 +26,8 @@ Brain tumor segmentation is a vital step in medical diagnostics. This project ai
 *   `1. Simple_UNet/`: Contains the baseline Modified UNet architecture, training scripts, and evaluation metrics.
 *   `2. Ea+UNet/`: Contains the proposed Edge-Aware ResNet-UNet implementation, loss function derivations, and the Streamlit web application for deployment.
 *   `Comparison Result/`: Jupyter notebooks and scripts used to compare the performance metrics (e.g., Dice Score) between the Simple UNet and Ea+UNet.
+*   `metadata/`: Lightweight metadata and summaries for local processed data, evaluation arrays, and training runs. Raw BraTS data and `.npy` artifacts are intentionally not tracked.
+*   `tools/`: Repository maintenance utilities, including metadata generation.
 
 ## ✨ Key Features
 
@@ -59,6 +61,19 @@ pip install -r "2. Ea+UNet/requirements.txt"
 
 This project utilizes the **BraTS (Brain Tumor Segmentation)** dataset. Please download the dataset and place it in the appropriate `data/` directory or run the provided preprocessing scripts (`preprocess_brats_2d.py`).
 
+Raw BraTS data, processed `.npy` slices, prediction arrays, checkpoints, and bulk generated outputs are excluded from Git to keep the repository lightweight and compliant with dataset distribution rules. Instead, the repository tracks metadata under `metadata/`, including:
+
+*   `metadata/processed_brats_2d_summary.json`
+*   `metadata/processed_brats_2d_cases.csv`
+*   `metadata/processed_brats_2d_manifest.csv`
+*   `metadata/evaluation_artifacts_summary.csv`
+
+Regenerate these summaries after preprocessing or evaluation:
+
+```bash
+python tools/generate_repository_metadata.py
+```
+
 ## 🖥️ Running the Application
 
 **🌐 Live Demo:** You can try out the deployed application directly here: **[Ea+UNet Streamlit App](https://edge-attention-resnet-unet.streamlit.app/)**
@@ -70,9 +85,13 @@ cd "2. Ea+UNet/Streamlit_App"
 streamlit run app.py
 ```
 
+Model checkpoints are not tracked in Git. Place the trained checkpoint at `2. Ea+UNet/Streamlit_App/best_model.pth` before running local inference.
+
 ## 📊 Results
 
 The Ea+UNet demonstrates clinical superiority over the baseline UNet, particularly in detecting fuzzy glioblastoma boundaries and reducing false negatives, ensuring higher diagnostic reliability. Detailed comparative analyses can be found in the `Comparison Result` folder.
+
+The final project report is available as `BTP_2026_BrainTumorSeg_Shivanshu_Shukla_cited.pdf`.
 
 ### Visual Comparison
 
